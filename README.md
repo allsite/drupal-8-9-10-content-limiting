@@ -1,4 +1,4 @@
-Content Limiter
+Content Limiting
 ======================
 Content Limiting provides options for limiting the scope of content for content types. 
 After enabling limiting the content type will be restricted to retain a specific amount 
