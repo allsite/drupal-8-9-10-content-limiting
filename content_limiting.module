@@ -6,9 +6,7 @@
  */
 
 use Drupal\Core\Url;
-use Drupal\Component\Utility\Html;
 use Drupal\Core\Entity\EntityInterface;
-use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\node\Entity\NodeType;
@@ -47,17 +45,16 @@ function content_limiting_form_node_type_edit_form_alter(&$form, FormStateInterf
   content_limiting_node_type_form($form, $form_state, $form_id);
 }
 
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
 function content_limiting_form_node_type_add_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   content_limiting_node_type_form($form, $form_state, $form_id);
-  
 }
 
 function content_limiting_node_type_form(&$form, FormStateInterface $form_state, $form_id) {
-
   $node_type = $form_state->getFormObject()->getEntity();
-  
   $type = $form['type']['#default_value'];
-  echo $type;
   $entityFieldManager = \Drupal::service('entity_field.manager');
   $fields = $entityFieldManager->getFieldDefinitions('node', $node_type->id());
 
