@@ -8,8 +8,8 @@ will delete as many items needed to enforce the set limit.
 Installation
 ------------
 
-- Install this module using the official Backdrop CMS instructions at
-  https://backdropcms.org/guide/modules.
+- Install this module using the official Drupal instructions at
+  https://www.drupal.org/docs/extending-drupal/installing-modules.
   
 - Visit the content type configuration page under Administration > Stucture > Content Types >
   Content Limiting (admin/structure/types/manage) to configure limiting for each type.
