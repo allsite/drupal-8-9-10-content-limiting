@@ -1,0 +1,5 @@
+name: Content Limiting
+description: "Provides options for limiting the scope of content for content types."
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
