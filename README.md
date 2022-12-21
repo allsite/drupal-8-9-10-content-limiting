@@ -1,5 +1,7 @@
-Content Limiting for Drupal 8/9/10 (updated for Drupal 10!)
+Content Limiting for Drupal 8/9/10
 ======================
+
+(updated for Drupal 10!)
 Content Limiting provides options for limiting the scope of content for content types. 
 After enabling limiting the content type will be restricted to retain a specific amount 
 of content pieces. When a content piece is added that exceeds the limit, Content Limiter 
