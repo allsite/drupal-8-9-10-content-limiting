@@ -55,19 +55,7 @@ function content_limiting_form_node_type_add_form_alter(&$form, FormStateInterfa
 function content_limiting_node_type_form(&$form, FormStateInterface $form_state, $form_id) {
   $node_type = $form_state->getFormObject()->getEntity();
   $type = $form['type']['#default_value'];
-  $entityFieldManager = \Drupal::service('entity_field.manager');
-  $fields = $entityFieldManager->getFieldDefinitions('node', $node_type->id());
-
-  $contentFields = [];
-  foreach ($fields as $field) {
-    if ($field instanceof BaseFieldDefinition) {
-      continue;
-    }
-    if (strpos($field->getType(), 'text') === 0 || strpos($field->getType(), 'string') === 0) {
-      $contentFields[$field->getName()] = $field->getLabel();
-    }
-  }
-
+ 
   $form['content_limiting'] = [
     '#type' => 'details',
     '#title' => t('Content Limiting'),
