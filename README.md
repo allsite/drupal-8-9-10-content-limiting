@@ -28,7 +28,7 @@ Issues
 ------
 
 Bugs and Feature requests should be reported in the Issue Queue:
-https://github.com/allsite/drupal9-content-limiting/issues.
+https://github.com/allsite/drupal-8-9-10-content-limiting/issues.
 
 Current Maintainers
 -------------------
